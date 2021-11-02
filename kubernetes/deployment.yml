@@ -1,0 +1,21 @@
+# apiVersion: apps/v1
+# kind: Deployment
+# metadata:
+#   name: express-deployment
+#   labels:
+#     app: express
+# spec:
+#   # replicas: 1
+#   selector:
+#     matchLabels:
+#       app: express
+#   template:
+#     metadata:
+#       labels:
+#         app: express
+#     spec:
+#       containers:
+#         - name: api
+#           image: express:latest
+#           ports:
+#             - containerPort: 8080

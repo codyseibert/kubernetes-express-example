@@ -1,0 +1,10 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: express-app
+  labels:
+    app: express
+spec:
+  containers:
+  - name: express-app
+    image: localhost:5000/express:latest
